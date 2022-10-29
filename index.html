@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex 布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .yinying {
+        box-shadow: ;
+      }
+      .flex {
+        display: flex;
+      }
+      .Baise {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg {
+        margin: 8px;
+      }
+      .mgr {
+        margin-right: 8px;
+      }
+      .mgt {
+        margin-top: 8px;
+      }
+      .daohang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(193, 190, 190);
+        font-size: 14px;
+        color: #666;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neiRong {
+          flex-direction: column;
+        }
+        .shuJuqu {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJu {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+      .neiRong::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <!---侧边栏--->
+    <div style="width: 200px; z-index: 2" class="ceBian Baise">
+      <!--头像栏-->
+      <div
+        style="
+          padding: 10px;
+          justify-content: center;
+          align-items: center;
+          border-bottom: 1px solid #999;
+        "
+        class="flex"
+      >
+        <img
+          src="https://s1.ax1x.com/2022/10/22/xgkFP0.png"
+          alt=""
+          width="40px"
+          height="40px"
+        />
+        <div style="margin-left: 10px">张志福</div>
+      </div>
+      <!--导航栏-->
+      <div class="flex1">
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+      </div>
+    </div>
+    <!---主区域--->
+    <div class="flex1 flex column">
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 1" class="Baise"></div>
+      <!--内容区-->
+      <div style="overflow: auto" class="neiRong flex1 flex">
+        <!--左区-->
+        <div style="flex: 3" class="flex column mg">
+          <!--数据区-->
+          <div class="shuJuqu flex">
+            <!--数据块-->
+            <div style="height: 100px" class="shuJu flex1 Baise mgr"></div>
+            <div style="height: 100px" class="shuJu flex1 Baise mgr"></div>
+            <div style="height: 100px" class="shuJu flex1 Baise mgr"></div>
+            <div style="height: 100px" class="shuJu flex1 Baise"></div>
+          </div>
+          <!--列表区-->
+          <div class="flex column">
+            <!--列表项-->
+            <div style="height: 160px" class="Baise mgt"></div>
+            <div style="height: 160px" class="Baise mgt"></div>
+            <div style="height: 160px" class="Baise mgt"></div>
+            <div style="height: 160px" class="Baise mgt"></div>
+            <div style="height: 160px" class="Baise mgt"></div>
+            <div style="height: 160px" class="Baise mgt"></div>
+          </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="youQu flex column mgr mgt">
+          <!--提示区-->
+          <div style="height: 150px" class="Baise"></div>
+          <!--消息区-->
+          <div style="height: 300px" class="Baise mgt"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
