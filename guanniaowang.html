@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>观鸟网</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: rgb(169, 169, 169);
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .minwidth {
+        min-width: 80vw;
+      }
+      .maxwidth {
+        max-width: 80vw;
+      }
+      .aligncenter {
+        align-items: center;
+      }
+      .qianLv {
+        background-color: rgb(99, 159, 116);
+      }
+      .shenLv {
+        background-color: rgb(64, 154, 90);
+      }
+      ul li {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    </style>
+  </head>
+  <body class="flex column aligncenter">
+    <!--标题区-->
+    <div style="height: 150px; align-items: center" class="minwidth">
+      <!--标题栏-->
+      <div
+        class="flex qianLv"
+        style="justify-content: center; align-items: center"
+      >
+        <h1>观鸟网</h1>
+      </div>
+      <!--导航栏-->
+      <ul
+        class="flex shenLv daohang"
+        style="
+          text-align: center;
+          margin: 0px;
+          align-items: center;
+          height: 60px;
+        "
+      >
+        <li style="flex: 1"><span>主页</span></li>
+        <li style="flex: 1"><a href="#">开始</a></li>
+        <li style="flex: 1"><a href="#">图片</a></li>
+        <li style="flex: 1"><a href="#">设备</a></li>
+        <li style="flex: 1"><a href="#">论坛</a></li>
+      </ul>
+    </div>
+    <!--内容区-->
+    <div style="flex: 5; margin: 8px" class="maxwidth flex shenLv">
+      <!--内容-->
+      <div style="flex: 4">
+        <h1 style="text-align: center">欢迎</h1>
+        <p>
+          欢迎访问观鸟网虚拟站点。如果这是一个真实的网站，那么它就是观鸟爱好者的理想聚集地。无论你是一名期望学习观鸟知识的新手，还是一位希望分享体会、经验和图片的观鸟老手。
+        </p>
+        <p>时不我待！赶快带齐装备，关上电脑，去拥抱美丽的大自然吧！</p>
+      </div>
+      <!--照片-->
+      <div style="flex: 1">
+        <h1 style="text-align: center">收藏照片</h1>
+        <a href="favorite-1.jpg">
+          <img src="favorite-1_th.jpg"
+          alt="一只体型小巧的鸟，羽毛蓝绿色，爪黑白相间，黑色的喙细且锋利。点击缩略图查看完整照片。"
+          height=100px" width=100px" /><a href="favorite-2.jpg">
+            <img src="favorite-2_th.jpg"
+            alt="一只美丽的孔雀的上半身图片，它的颈上覆盖蓝色的羽毛，有浅色的喙和蓝色的冠。点击缩略图查看完整照片。"
+            height=100px" width=100px" /><a href="favorite-3.jpg"
+              ><img src="favorite-3_th.jpg"
+              alt="一只大鸟的上半身图片，羽毛白色，浅色的喙细长而弯曲。点击缩略图查看完整照片。"
+              height=100px" width=100px" /></a
+            >
+            <a href="favorite-4.jpg"
+              ><img
+                src="favorite-4_th.jpg"
+                alt="一只成年鹈鹕，多数羽毛为白色，背部和腹部有少许黑色羽毛，又长又直的喙呈黄色，嘴下有一个喉囊可以暂时储存食物。点击缩略图查看完整照片。"
+                height="100px"
+                width="100px" /></a
+          ></a>
+        </a>
+      </div>
+    </div>
+    <!--底部区-->
+    <div style="flex: 1" class="maxwidth qianLv">
+      <p>
+        本虚拟站点采用 CC0 协议，代码所有内容均可任意修改和复用。原始版本由
+        Chris Mills 于 2016 年编写。Roy Tian 于 2019 年汉化。
+      </p>
+      <p>
+        <a href="http://game-icons.net/lorc/originals/dove.html">鸽子图标</a> 由
+        Lorc 绘制。
+      </p>
+    </div>
+  </body>
+</html>
